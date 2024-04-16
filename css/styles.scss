@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
+
+// === Mixin ===
+@mixin roboto  {
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin quicksand {
+    font-family: 'Quicksand', sans-serif;
+}
+// === Mixin ===
+
+// === Viriables ===
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-bold: 700;
+
+$padding-vertical: 120px;
+$padding-vertical-sm: 60px;
+
+// === Viraibles ===
+
+// === COMMON ===
+
+body{
+    @include roboto;
+
+}
+
+.wrapper-outer {}
+
+.wrapper-inner{
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: $padding-vertical;
+    padding-bottom: $padding-vertical;
+    
+    &--wide {
+        max-width: 1200px;
+    }
+}
+
+// === / COMMON ===
+
+// === HEADER ===
+.section-header {}
+// === / HEADER ===
+
+// === HERO-IMAGE ===
+.section-hero-image {}
+// === / HERO-IMAGE ===
+
+// === CUSTOMERS ===
+.section-customers {}  
+// === / CUSTOMERS ===
+
+// === PLAN-AND-MANEGE ===
+.section-plan-and-manage {}
+// === / PLAN-AND-MANEGE ===
+
+// === FEATURES ===
+.section-features {}   
+// === / FEATURES ===
+
+// === STATS ===
+.section-stats {}      
+// === / STATS === 
+
+// === BLOG ===
+.section-blog {}       
+// === / BLOG ===
+
+// === QUOTES ===
+.section-quotes {}
+// === / QUOTES === 
+
+// === FAQ  ===
+.section-faq {}
+// === / FAQ  ===
+
+// === GET-STARTED ===
+.section-get-started {}
+// === / GET-STARTED === 
+
+// === NEWSLETTER ===
+.section-newsletter {}
+// === / NEWSLETTER ===
+
+// === FOOTER ===
+.section-footer {}
+// === / FOOTER ===
