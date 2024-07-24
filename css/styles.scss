@@ -29,7 +29,7 @@ $transition: .2s;
 
 // === COMMON ===
 
-body{
+body {
     @include roboto;
 
 }
@@ -91,7 +91,7 @@ body{
 
             font-size: 12px;
             font-weight: $fw-medium;
-            color: #697ca6;
+            color: #a66994;
             text-decoration: none;
             transition: $transition;
 
@@ -108,30 +108,39 @@ body{
     }
 }
 
-.socials {}
+.socials {
+    margin-left: auto;
+    align-items: right;
+
+}
 
 .socials-wrapper {
     display: flex;
+    align-items: left;
     margin: 0;
     padding: 0;
     list-style: none;
+
+
+    
     
     &__item {
         &+& {
             margin-left: $base * 10;
         }
 
-        path {
-            fill: #B6BAC7;
-        }
-
-        &-link {
-           
-
-            &:hover {
-                color: #5e81fe;
+        &-link {    
+            path {
+                fill: #B6BAC7;
+                transition: $transition;
             }
-        }
+    
+             &:hover {
+                path {
+                    fill: #B6BAC7;
+                }
+            }
+            }
     }
 }
 
